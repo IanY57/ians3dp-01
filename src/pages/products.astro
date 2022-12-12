@@ -1,10 +1,12 @@
 ---
+import ProductsHero from "../components/heros/Products-Hero.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "Ians3DP.au | Products";
+const welcomeText = "This is the Products Page";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <div>
-    <h1>Products</h1>
+    <ProductsHero />
   </div>
 </BaseLayout>

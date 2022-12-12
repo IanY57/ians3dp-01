@@ -13,7 +13,16 @@ const { pageTitle } = Astro.props;
     <title>{pageTitle}</title>
   </head>
   <body>
-    <NavBar />
-    <slot />
+    <main class='container'>
+      <NavBar />
+      <slot />
+    </main>
   </body>
 </html>
+
+<style>
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+</style>
